@@ -1,10 +1,11 @@
+// Page-header
 .page-header {
     height: 95vh;
     background-image: linear-gradient(
         to right bottom, 
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)),
-    url(../img/hero.jpg);
+        rgba($color-crimson, .5),
+        rgba($color-dodgerblue, .5)),
+    url(../img/bg.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
@@ -18,12 +19,12 @@
     }
     
     &__logo {
-        height: 3.5rem;
+        height: 8rem;
     }
     
     &__text-container {
         position: absolute;
-        top: 40%;
+        top: 35%;
         left: 50%;
         text-align: center;
         transform: translate(-50%, -50%);
