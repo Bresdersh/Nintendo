@@ -1,0 +1,22 @@
+{
+  "name": "page",
+  "version": "1.0.0",
+  "description": "project for my portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bresdersh/Project.git"
+  },
+  "author": "Krystian Fira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bresdersh/Project/issues"
+  },
+  "homepage": "https://github.com/Bresdersh/Project#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
