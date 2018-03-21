@@ -39,10 +39,12 @@ body {
     font-weight: 700;
     letter-spacing: .2rem;
     text-transform: uppercase;
-    background-image: linear-gradient(to right, $color-crimson, $color-dodgerblue);
+    background-image: linear-gradient(
+        to right, 
+        $color-crimson, 
+        $color-dodgerblue);
     -webkit-background-clip: text;
     color: transparent;
-
     transition: all .2s;
 
     &:hover {
@@ -61,6 +63,7 @@ body {
 // Paragraph
 .paragraph {
     font-size: $default-font-size;
+    text-align: justify;
 
     &:not(:last-child) {
         margin-bottom: 3rem;

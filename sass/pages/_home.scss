@@ -4,3 +4,20 @@
     padding: 25rem 0;
     background-color: $color-grey-light-1;
 }
+
+// Section-features 
+.section-features {
+    margin-top: -12rem;
+    padding: 24rem 0;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-crimson, .4),
+        rgba($color-dodgerblue, .2)),
+    url(../img/bg2.jpg);
+    background-size: cover;
+    transform: skewY(-7deg);
+
+    & > * {
+        transform: skewY(7deg);
+    }
+}
