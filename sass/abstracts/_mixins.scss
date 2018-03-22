@@ -11,3 +11,8 @@
 @mixin shadow {
     text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
 }
+
+// Box-shadow-back
+@mixin shadow-back {
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+}

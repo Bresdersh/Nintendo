@@ -108,9 +108,8 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 10rem;
-  transition: all .2s;
   position: relative;
-  backface-visibility: hidden; }
+  transition: all .2s; }
 
 .btn:hover {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -163,6 +162,94 @@ body {
 .btn-info:active {
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
   transform: translate(0); }
+
+.card {
+  height: 52rem;
+  position: relative;
+  perspective: 150rem;
+  -moz-perspective: 150rem; }
+  .card__side {
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    height: 52rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border-radius: .2rem;
+    backface-visibility: hidden;
+    transition: all .8s ease; }
+    .card__side--front {
+      background-color: #FFFFFF; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-one {
+        background-image: linear-gradient(to right bottom, #E60000, #DC143C); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__picture {
+    height: 25rem;
+    background-size: cover;
+    background-blend-mode: overlay; }
+    .card__picture--one {
+      background-image: linear-gradient(to right bottom, #E60000, #DC143C), url(../img/dark.jpg);
+      background-color: #55C57A;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); }
+    .card__picture--two {
+      background-image: url(../img/mario.png);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%); }
+    .card__picture--three {
+      background-image: url(../img/mario.png);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); }
+  .card__headline {
+    width: 75%;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 2rem;
+    right: 11rem;
+    color: #FFFFFF; }
+  .card__headline-span {
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__headline-span--one {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.4), rgba(230, 0, 0, 0.4)); }
+  .card__details {
+    padding: 1rem; }
+    .card__details ul {
+      margin: 0 auto;
+      width: 80%;
+      list-style: none; }
+      .card__details ul li {
+        padding: 1rem;
+        font-size: 1.5rem;
+        text-align: center; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 0.2rem solid #777777; }
+  .card__back-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .card__price-box {
+    margin-top: 16rem;
+    text-align: center;
+    color: #FFFFFF; }
+  .card__price-only {
+    font-size: 2.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 8rem;
+    font-weight: 100; }
 
 .composition {
   position: relative; }
@@ -242,6 +329,7 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   .page-header__logo-container {
     position: absolute;
@@ -264,8 +352,13 @@ body {
 .section-features {
   margin-top: -12rem;
   padding: 24rem 0;
-  background-image: linear-gradient(to right bottom, rgba(220, 20, 60, 0.4), rgba(30, 144, 255, 0.2)), url(../img/bg2.jpg);
+  background-image: linear-gradient(to right bottom, rgba(230, 0, 0, 0.4), rgba(30, 144, 255, 0.2)), url(../img/bg2.jpg);
   background-size: cover;
   transform: skewY(-7deg); }
   .section-features > * {
     transform: skewY(7deg); }
+
+.section-games {
+  margin-top: -12rem;
+  padding: 25rem 0 50rem 0;
+  background-color: #F7F7F7; }

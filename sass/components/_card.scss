@@ -1,0 +1,141 @@
+// Card
+.card {
+    height: 52rem;
+    position: relative;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+
+    // Basic options
+    &__side {
+        @include shadow-back;
+        height: 52rem;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        border-radius: .2rem;
+        backface-visibility: hidden;
+        transition: all .8s ease;
+
+        &--front {
+            background-color: $color-white;
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+
+            &-one {
+                background-image: linear-gradient(to right bottom, $color-dark-red, $color-crimson);
+            }
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    // Front
+    &__picture {
+        height: 25rem;
+        background-size: cover;
+        background-blend-mode: overlay;
+
+        &--one {
+            background-image: linear-gradient(
+                to right bottom, 
+                $color-dark-red, 
+                $color-crimson),
+            url(../img/dark.jpg);
+            background-color: $color-primary;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        }
+
+        &--two {
+            background-image: url(../img/mario.png);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+        }
+
+        &--three {
+            background-image: url(../img/mario.png);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        }
+    }
+
+    &__headline {
+        width: 75%;
+        font-size: 2.5rem;
+        font-weight: 300;
+        text-align: center;
+        text-transform: uppercase;
+        position: absolute;
+        top: 2rem;
+        right: 11rem;
+        color: $color-white;
+    }
+
+    &__headline-span {
+        padding: 1rem 1.5rem;
+        border-radius: .5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--one {
+            background-image: linear-gradient(
+            to right bottom, 
+            rgba($color-yellow-light, .4),
+            rgba($color-dark-red, .4));
+        }
+    }
+
+    &__details {
+        padding: 1rem;
+
+        ul {
+            margin: 0 auto;
+            width: 80%;
+            list-style: none;
+
+            li {
+                padding: 1rem;
+                font-size: 1.5rem;
+                text-align: center;
+
+                &:not(:last-child) {
+                    border-bottom: .2rem solid $color-grey-dark;
+                }
+            }
+        }
+    }
+
+    // Back
+    &__back-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__price-box {
+        margin-top: 16rem;
+        text-align: center;
+        color: $color-white;
+    }
+
+    &__price-only {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 8rem;
+        font-weight: 100;
+    }
+}
