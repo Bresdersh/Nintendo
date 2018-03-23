@@ -26,7 +26,24 @@
             transform: rotateY(180deg);
 
             &-one {
-                background-image: linear-gradient(to right bottom, $color-dark-red, $color-crimson);
+                background-image: linear-gradient(
+                to right bottom, 
+                $color-dark-red, 
+                $color-crimson);
+            }
+
+            &-two {
+                background-image: linear-gradient(
+                to right bottom, 
+                $color-yellow-light, 
+                $color-yellow-dark);
+            }
+
+            &-three {
+                background-image: linear-gradient(
+                to right bottom, 
+                $color-dodgerblue, 
+                $color-steelblue);
             }
         }
     }
@@ -43,27 +60,36 @@
     &__picture {
         height: 25rem;
         background-size: cover;
-        background-blend-mode: overlay;
+        background-blend-mode: hue;
+        border-top-left-radius: .2rem;
+        border-top-right-radius: .2rem;
 
         &--one {
             background-image: linear-gradient(
                 to right bottom, 
-                $color-dark-red, 
-                $color-crimson),
+                $color-yellow-light, 
+                $color-yellow-dark),
             url(../img/dark.jpg);
-            background-color: $color-primary;
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
         }
 
         &--two {
-            background-image: url(../img/mario.png);
+            background-image: linear-gradient(
+                to right bottom, 
+                $color-black, 
+                $color-crimson),
+            url(../img/doom.jpg);
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
         }
 
         &--three {
-            background-image: url(../img/mario.png);
+            background-image: linear-gradient(
+                to right bottom, 
+                $color-dark-red, 
+                $color-crimson),
+            url(../img/skyrim.jpg);
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
         }
@@ -77,7 +103,7 @@
         text-transform: uppercase;
         position: absolute;
         top: 2rem;
-        right: 11rem;
+        right: 14rem;
         color: $color-white;
     }
 
@@ -90,8 +116,8 @@
         &--one {
             background-image: linear-gradient(
             to right bottom, 
-            rgba($color-yellow-light, .4),
-            rgba($color-dark-red, .4));
+            rgba($color-crimson, .6),
+            rgba($color-dark-red, .6));
         }
     }
 
@@ -116,7 +142,7 @@
     }
 
     // Back
-    &__back-box {
+    &__back {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -124,13 +150,13 @@
     }
 
     &__price-box {
-        margin-top: 16rem;
+        margin-bottom: 8rem;
         text-align: center;
         color: $color-white;
     }
 
     &__price-only {
-        font-size: 2.4rem;
+        font-size: 2.5rem;
         text-transform: uppercase;
     }
 

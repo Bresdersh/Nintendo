@@ -101,8 +101,14 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.u-margin-top-big {
+  margin-top: 8rem; }
+
+.u-margin-top-huge {
+  margin-top: 10rem; }
+
 .btn:link, .btn:visited {
-  padding: 1.5rem 4rem;
+  padding: 1.8rem 4.5rem;
   display: inline-block;
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -127,6 +133,13 @@ body {
   color: #777777; }
   .btn--white::after {
     background-color: #FFFFFF; }
+
+.btn--card {
+  font-size: 1.8rem !important;
+  background-color: #5643FA;
+  color: #FFFFFF; }
+  .btn--card::after {
+    background-color: #5643FA; }
 
 .btn::after {
   content: "";
@@ -185,6 +198,10 @@ body {
       transform: rotateY(180deg); }
       .card__side--back-one {
         background-image: linear-gradient(to right bottom, #E60000, #DC143C); }
+      .card__side--back-two {
+        background-image: linear-gradient(to right bottom, #FFB900, #FF7730); }
+      .card__side--back-three {
+        background-image: linear-gradient(to right bottom, #1E90FF, #4682B4); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -192,18 +209,19 @@ body {
   .card__picture {
     height: 25rem;
     background-size: cover;
-    background-blend-mode: overlay; }
+    background-blend-mode: hue;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem; }
     .card__picture--one {
-      background-image: linear-gradient(to right bottom, #E60000, #DC143C), url(../img/dark.jpg);
-      background-color: #55C57A;
+      background-image: linear-gradient(to right bottom, #FFB900, #FF7730), url(../img/dark.jpg);
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
       clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); }
     .card__picture--two {
-      background-image: url(../img/mario.png);
+      background-image: linear-gradient(to right bottom, #000000, #DC143C), url(../img/doom.jpg);
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%); }
     .card__picture--three {
-      background-image: url(../img/mario.png);
+      background-image: linear-gradient(to right bottom, #E60000, #DC143C), url(../img/skyrim.jpg);
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
       clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); }
   .card__headline {
@@ -214,7 +232,7 @@ body {
     text-transform: uppercase;
     position: absolute;
     top: 2rem;
-    right: 11rem;
+    right: 14rem;
     color: #FFFFFF; }
   .card__headline-span {
     padding: 1rem 1.5rem;
@@ -222,7 +240,7 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__headline-span--one {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.4), rgba(230, 0, 0, 0.4)); }
+      background-image: linear-gradient(to right bottom, rgba(220, 20, 60, 0.6), rgba(230, 0, 0, 0.6)); }
   .card__details {
     padding: 1rem; }
     .card__details ul {
@@ -235,17 +253,17 @@ body {
         text-align: center; }
         .card__details ul li:not(:last-child) {
           border-bottom: 0.2rem solid #777777; }
-  .card__back-box {
+  .card__back {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
   .card__price-box {
-    margin-top: 16rem;
+    margin-bottom: 8rem;
     text-align: center;
     color: #FFFFFF; }
   .card__price-only {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     text-transform: uppercase; }
   .card__price-value {
     font-size: 8rem;
@@ -360,5 +378,5 @@ body {
 
 .section-games {
   margin-top: -12rem;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   background-color: #F7F7F7; }
