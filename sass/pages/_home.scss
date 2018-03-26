@@ -2,7 +2,7 @@
 .section-about {
     margin-top: -20vh;
     padding: 25rem 0;
-    background-color: $color-grey-light-1;
+    background-color: $color-grey-light;
 }
 
 // Section-features 
@@ -26,5 +26,11 @@
 .section-games {
     margin-top: -12rem;
     padding: 25rem 0 15rem 0; 
-    background-color: $color-grey-light-1;
+    background-color: $color-grey-light;
+}
+
+// Section-impressions
+.section-impressions {
+    padding: 15rem 0;
+    position: relative;
 }

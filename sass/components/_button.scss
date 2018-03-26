@@ -2,8 +2,8 @@
 .btn {
     &:link,
     &:visited {
-        padding: 1.8rem 4.5rem;
         display: inline-block;
+        padding: 1.8rem 4.5rem;
         font-size: $default-font-size;
         text-transform: uppercase;
         text-decoration: none;
@@ -37,7 +37,6 @@
     }
 
     &--card {
-        font-size: 1.8rem !important;
         background-color: $color-purple;
         color: $color-white;
 
