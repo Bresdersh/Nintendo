@@ -2,12 +2,12 @@
 .bg-video {
     height: 100%;
     width: 100%;
-    opacity: .40;
-    overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+    opacity: .28;
+    overflow: hidden;
 
     &__content {
         height: 100%;
