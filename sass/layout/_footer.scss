@@ -1,0 +1,60 @@
+// Footer
+.footer {
+    padding: 10rem;
+    font-size: 1.4rem;
+    background-color: $color-black;
+    color: $color-grey-dark;
+
+    &__logo-box {
+        margin-bottom: 8rem;
+        text-align: center;
+    }
+
+    &__logo {
+        height: auto;
+        width: 15rem;
+    }
+
+    &__navigation {
+        display: inline-block;
+        padding-top: 2rem;
+        border-top: .2rem solid $color-grey;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $color-grey-dark;
+            transition: all .2s;
+        }
+
+        &:hover,
+        &:active {
+            @include shadow;
+            transform: rotate(5deg) scale(1.3);
+        }
+    }
+
+    &__copyright {
+        width: 80%;
+        color: $color-grey-dark;       
+        float: right; 
+        padding-top: 2rem;
+        border-top: .2rem solid $color-grey;
+    }
+}
