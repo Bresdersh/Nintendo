@@ -117,7 +117,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  opacity: .28;
+  opacity: .24;
   overflow: hidden; }
   .bg-video__content {
     height: 100%;
@@ -216,7 +216,7 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-one {
-        background-image: linear-gradient(to right bottom, #E60000, #DC143C); }
+        background-image: linear-gradient(to right bottom, #228B22, #55C57A); }
       .card__side--back-two {
         background-image: linear-gradient(to right bottom, #FFB900, #FF7730); }
       .card__side--back-three {
@@ -232,11 +232,11 @@ body {
     border-top-left-radius: .2rem;
     border-top-right-radius: .2rem; }
     .card__picture--one {
-      background-image: linear-gradient(to right bottom, #FFB900, #FF7730), url(../img/dark.jpg);
+      background-image: linear-gradient(to right bottom, #FFB900, #FF7730), url(../img/noire.jpg);
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
       clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); }
     .card__picture--two {
-      background-image: linear-gradient(to right bottom, #000000, #DC143C), url(../img/doom.jpg);
+      background-image: linear-gradient(to right bottom, #000000, #5643FA), url(../img/doom.jpg);
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%); }
     .card__picture--three {
@@ -381,8 +381,8 @@ body {
 .form__radio-label {
   cursor: pointer;
   padding-left: 4.5rem;
-  position: relative;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  position: relative; }
 
 .form__radio-button {
   display: inline-block;
@@ -458,9 +458,9 @@ body {
 
 .footer {
   padding: 10rem;
-  font-size: 1.4rem;
-  background-color: #000000;
-  color: #777777; }
+  font-size: 1.8rem;
+  background-color: #5643FA;
+  color: #FFFFFF; }
   .footer__logo-box {
     margin-bottom: 8rem;
     text-align: center; }
@@ -470,9 +470,11 @@ body {
   .footer__navigation {
     display: inline-block;
     padding-top: 2rem;
-    border-top: 0.2rem solid #999999; }
+    border-top: 0.2rem solid #999999;
+    color: #FFFFFF; }
   .footer__list {
-    list-style: none; }
+    list-style: none;
+    color: #FFFFFF; }
   .footer__item {
     display: inline-block; }
     .footer__item:not(:last-child) {
@@ -481,17 +483,17 @@ body {
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
-    color: #777777;
+    color: #FFB900;
     transition: all .2s; }
   .footer__link:hover, .footer__link:active {
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
     transform: rotate(5deg) scale(1.3); }
   .footer__copyright {
-    width: 80%;
-    color: #777777;
-    float: right;
     padding-top: 2rem;
-    border-top: 0.2rem solid #999999; }
+    width: 80%;
+    float: right;
+    border-top: 0.2rem solid #999999;
+    color: #FFFFFF; }
 
 .row {
   margin: 0 auto;
@@ -521,7 +523,7 @@ body {
 
 .page-header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(220, 20, 60, 0.5), rgba(30, 144, 255, 0.5)), url(../img/bg.jpg);
+  background-image: linear-gradient(to right bottom, rgba(220, 20, 60, 0.4), rgba(30, 144, 255, 0.4)), url(../img/bg.jpeg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -565,12 +567,12 @@ body {
 
 .section-newsletter {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #5643FA, #228B22); }
+  background-image: linear-gradient(to right bottom, #1E90FF, #228B22); }
 
 .newsletter {
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
   height: 50rem;
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nature.jpg);
   background-size: cover;
   border-radius: .2rem; }
   .newsletter__form {

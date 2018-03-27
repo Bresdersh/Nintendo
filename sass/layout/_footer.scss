@@ -1,9 +1,9 @@
 // Footer
 .footer {
     padding: 10rem;
-    font-size: 1.4rem;
-    background-color: $color-black;
-    color: $color-grey-dark;
+    font-size: 1.8rem;
+    background-color: $color-purple;
+    color: $color-white;
 
     &__logo-box {
         margin-bottom: 8rem;
@@ -19,10 +19,12 @@
         display: inline-block;
         padding-top: 2rem;
         border-top: .2rem solid $color-grey;
+        color: $color-white;
     }
 
     &__list {
         list-style: none;
+        color: $color-white;
     }
 
     &__item {
@@ -39,7 +41,7 @@
             display: inline-block;
             text-transform: uppercase;
             text-decoration: none;
-            color: $color-grey-dark;
+            color: $color-yellow-light;
             transition: all .2s;
         }
 
@@ -51,10 +53,10 @@
     }
 
     &__copyright {
-        width: 80%;
-        color: $color-grey-dark;       
-        float: right; 
         padding-top: 2rem;
+        width: 80%;
+        float: right; 
         border-top: .2rem solid $color-grey;
+        color: $color-white;       
     }
 }

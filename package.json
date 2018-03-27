@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Bresdersh/Project#readme",
   "devDependencies": {
-    "node-sass": "^4.7.2"
+    "node-sass": "^4.8.3"
   }
 }
