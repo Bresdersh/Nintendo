@@ -9,6 +9,10 @@
     background-color: rgba($color-black, .9);
     transition: all .3s;
 
+    @include respond(tab-port) {
+        padding: 2rem;
+    }
+
     &__icon {
         display: inline-block;
         margin-bottom: .5rem;
@@ -19,6 +23,10 @@
         $color-dodgerblue);
         -webkit-background-clip: text;
         color: transparent;
+
+        @include respond(tab-port) {
+            margin-bottom: 0;
+        }
     }
 
     &__text {
