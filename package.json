@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "website",
   "version": "1.0.0",
   "description": "project for my portfolio",
   "main": "index.js",
@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/Bresdersh/Project/issues"
   },
-  "homepage": "https://github.com/Bresdersh/Project#readme",
-  "devDependencies": {
-    "node-sass": "^4.8.3"
-  }
+  "homepage": "https://github.com/Bresdersh/Project#readme"
 }
