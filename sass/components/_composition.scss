@@ -31,7 +31,8 @@
             right: -4rem;
 
             @include respond(tab-port) {
-                top: -2rem;
+                top: -1rem;
+                left: 18rem;
             }
         }
 
@@ -41,7 +42,7 @@
 
             @include respond(tab-port) {
                 top: -1rem;
-                left: 8rem;
+                left: -14rem;
             }
         }
 

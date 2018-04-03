@@ -43,7 +43,7 @@ html {
       font-size: 50%; } }
   @media only screen and (max-width: 37.5em) {
     html {
-      font-size: 40%; } }
+      font-size: 38%; } }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -78,7 +78,7 @@ body {
     animation: moveInLeft 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .main-headline--top {
-        font-size: 10rem;
+        font-size: 6rem;
         letter-spacing: 1rem; } }
   .main-headline--pin {
     display: block;
@@ -88,7 +88,7 @@ body {
     animation: moveInRight 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .main-headline--pin {
-        font-size: 3.5rem;
+        font-size: 3rem;
         letter-spacing: .5rem; } }
 
 .second-headline {
@@ -383,14 +383,15 @@ body {
       right: -4rem; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--two {
-          top: -2rem; } }
+          top: -1rem;
+          left: 18rem; } }
     .composition__photo--three {
       top: 7rem;
       right: 9rem; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--three {
           top: -1rem;
-          left: 8rem; } }
+          left: -14rem; } }
     .composition__photo:hover {
       text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
       z-index: 20;
@@ -531,11 +532,16 @@ body {
     width: 15rem;
     float: left;
     position: relative;
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
+    overflow: hidden;
+    border-radius: 50%;
     transform: translateX(-3rem) skewX(12deg); }
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      .story__shape {
+        border-radius: none;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%); } }
     @media only screen and (max-width: 37.5em) {
       .story__shape {
         transform: translateX(-3rem) skewX(0); } }
@@ -662,13 +668,16 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .page-header {
-  height: 95vh;
+  height: 85vh;
   background-image: linear-gradient(to right bottom, rgba(220, 20, 60, 0.4), rgba(30, 144, 255, 0.4)), url(../img/bg.jpeg);
   background-size: cover;
   background-position: top;
-  position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  position: relative; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .page-header {
+      height: 95vh;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); } }
   @media only screen and (max-width: 37.5em) {
     .page-header {
       margin-bottom: 10rem;
@@ -720,7 +729,7 @@ body {
   right: 6.5rem;
   z-index: 1000;
   background-image: radial-gradient(#1E90FF, #4682B4);
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1); }
   @media only screen and (max-width: 56.25em) {
     .navigation__background {
       top: 4.5rem;
@@ -820,7 +829,7 @@ body {
   background-color: #F7F7F7; }
   @media only screen and (max-width: 56.25em) {
     .section-about {
-      padding: 15rem 0; } }
+      padding: 18rem 0; } }
 
 .section-features {
   margin-top: -12rem;
@@ -840,7 +849,7 @@ body {
   background-color: #F7F7F7; }
   @media only screen and (max-width: 56.25em) {
     .section-games {
-      padding: 20rem 0 15rem 0; } }
+      padding: 20rem 0 10rem 0; } }
 
 .section-impressions {
   padding: 15rem 0;
