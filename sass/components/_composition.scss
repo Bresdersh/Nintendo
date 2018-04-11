@@ -18,8 +18,8 @@
         }
 
         &--one {
-            top: 0;
-            left: -3rem;
+            top: -3rem;
+            left: -1rem;
 
             @include respond(tab-port) {
                 top: 0;
@@ -27,8 +27,8 @@
         }
 
         &--two {
-            top: 0;
-            right: -4rem;
+            top: -3rem;
+            right: 1rem;
 
             @include respond(tab-port) {
                 top: -1rem;
@@ -37,8 +37,8 @@
         }
 
         &--three {
-            top: 7rem;
-            right: 9rem;
+            top: 9rem;
+            right: 12rem;
 
             @include respond(tab-port) {
                 top: -1rem;

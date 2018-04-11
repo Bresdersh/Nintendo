@@ -3,24 +3,24 @@
     height: 85vh;
     background-image: linear-gradient(
         to right bottom, 
-        rgba($color-crimson, .4),
-        rgba($color-dodgerblue, .4)),
-    url(../img/bg.jpeg);
+        rgba($color-dodgerblue, .4),
+        rgba($color-black, .2)),
+    url(../img/bg2.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
 
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
         height: 95vh;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 94%);
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 94%);
     }
 
     @include respond(phone) {
-        margin-bottom: 10rem;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 300% 85vh, 0 70%);
+        clip-path: polygon(0 0, 100% 0, 300% 85vh, 0 70%);
     }
+
 
     &__logo-container {
         position: absolute;

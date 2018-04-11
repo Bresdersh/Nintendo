@@ -43,6 +43,7 @@ body {
 // Second-headline
 .second-headline {
     display: inline-block;
+    margin-top: 6rem;
     font-size: 3.5rem;
     font-weight: 700;
     letter-spacing: .2rem;
@@ -56,10 +57,12 @@ body {
     transition: all .2s;
 
     @include respond(tab-port) {
+        margin-top: 14rem;
         font-size: 3.5rem;
     }
 
     @include respond(phone) {
+        margin-top: 6rem;
         font-size: 3rem;
     }
 
