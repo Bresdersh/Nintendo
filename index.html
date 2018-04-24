@@ -1,500 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Design for my portfolio</title>
-        
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design for my portfolio</title>
 
-        <!-- Site -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/icon-font.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-    </head>
-    <body>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-        <!-- Header -->
-        <header class="page-header">
-            <div class="page-header__logo-container">
-                <img src="img/logo-white.png" 
-                     alt="Logo" 
-                     class="page-header__logo">
+    <!-- Site -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <!-- Off-canvas -->
+    <div class="off-canvas">
+        <span class="off-canvas__toggle">
+            <span class="off-canvas__span"></span>
+            <span class="off-canvas__span"></span>
+            <span class="off-canvas__span"></span>
+        </span>
+
+        <!-- Navigation -->
+        <nav class="navigation" role="navigation">
+            <h1 class="navigation__heading">
+                <a href="#" class="navigation__relay">
+                    <img src="img/logo-top.png" alt="Logo" class="navigation__heading--alteration">
+                </a>
+            </h1>
+
+            <!-- Navigation-list -->
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        Start
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link navigation__link--active">
+                        O nas
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        Oferta
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        Cennik
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        Galeria
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        Kontakt
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="page-header__logo-container">
+            <img src="img/logo-white.png" alt="Logo" class="page-header__logo">
+        </div>
+
+        <div class="page-header__text-container">
+            <h1 class="main-headline">
+                <span class="main-headline--top">
+                    Nintendo
+                </span>
+                <span class="main-headline--pin">
+                    your new world
+                </span>
+            </h1>
+
+            <a href="#" class="btn btn--white btn--animated">
+                More details
+            </a>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="page-content">
+
+        <!-- Section-about -->
+        <section class="section-about">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="second-headline">
+                    The Legend of Zelda
+                </h2>
             </div>
 
-            <div class="page-header__text-container">
-                <h1 class="main-headline">
-                    <span class="main-headline--top">
-                        Nintendo
-                    </span>
-                    <span class="main-headline--pin">
-                        your new world
-                    </span>
-                </h1>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h3 class="third-headline u-margin-bottom-small">
+                        This is your unique story
+                    </h3>
+                    <p class="paragraph">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium quos minus, ducimus nesciunt vel saepe quod voluptatum!
+                        Nemo recusandae tenetur non quis architecto cumque neque, quaerat quasi distinctio numquam doloremque
+                        veritatis mollitia sint.
+                    </p>
+                    <h3 class="third-headline u-margin-bottom-small">
+                        Do not lose your chance
+                    </h3>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit molestiae ullam quia obcaecati aliquid ut atque dolor et cupiditate
+                        repellat quisquam corporis aspernatur.
+                    </p>
 
-                <a href="#" class="btn btn--white btn--animated">
-                    More details
+                    <a href="#" class="btn-info">
+                        Expand description &rarr;
+                    </a>
+                </div>
+
+                <div class="col-1-of-2">
+                    <div class="composition">
+                        <img src="img/link.png" alt="Link" class="composition__photo composition__photo--one">
+
+                        <img src="img/horse.png" alt="Horse" class="composition__photo composition__photo--two">
+
+                        <img src="img/zelda.png" alt="Zelda" class="composition__photo composition__photo--three">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section-features -->
+        <section class="section-features">
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-hammer"></i>
+                        <h3 class="third-headline u-margin-bottom-small">
+                            Weapons
+                        </h3>
+                        <p class="feature-box__text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sed ut nihil sequi earum qui.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-compass"></i>
+                        <h3 class="third-headline u-margin-bottom-small">
+                            World
+                        </h3>
+                        <p class="feature-box__text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sed ut nihil sequi earum qui.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-gunsight"></i>
+                        <h3 class="third-headline u-margin-bottom-small">
+                            Opponents
+                        </h3>
+                        <p class="feature-box__text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sed ut nihil sequi earum qui.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-gear"></i>
+                        <h3 class="third-headline u-margin-bottom-small">
+                            Mechanics
+                        </h3>
+                        <p class="feature-box__text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sed ut nihil sequi earum qui.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section-games -->
+        <section class="section-games">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="second-headline">
+                    Other popular games
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--one">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__headline">
+                                <span class="card__headline-span card__headline-span--one">
+                                    Noire
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>
+                                        Team Bondi
+                                    </li>
+                                    <li>
+                                        17.11.2017
+                                    </li>
+                                    <li>
+                                        PC/PS4/PS/XONE/X360/Switch
+                                    </li>
+                                    <li>
+                                        Rockstar Games
+                                    </li>
+                                    <li>
+                                        Cenega S.A.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-one">
+                            <div class="card__back">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">
+                                        Only
+                                    </p>
+                                    <p class="card__price-value">
+                                        $39
+                                    </p>
+                                </div>
+                                <a href="#" class="btn btn--white">
+                                    Preorder!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--two">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__headline">
+                                <span class="card__headline-span card__headline-span--one">
+                                    Doom
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>
+                                        id Software
+                                    </li>
+                                    <li>
+                                        10.11.2017
+                                    </li>
+                                    <li>
+                                        PC/PS4/Switch/XONE
+                                    </li>
+                                    <li>
+                                        Bethesda Softworks
+                                    </li>
+                                    <li>
+                                        Cenega S.A.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-two">
+                            <div class="card__back">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">
+                                        Only
+                                    </p>
+                                    <p class="card__price-value">
+                                        $49
+                                    </p>
+                                </div>
+                                <a href="#" class="btn btn--white">
+                                    Preorder!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--three">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__headline">
+                                <span class="card__headline-span card__headline-span--one">
+                                    Skyrim
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>
+                                        Bethesda Softworks
+                                    </li>
+                                    <li>
+                                        17.11.2017
+                                    </li>
+                                    <li>
+                                        PC/PS4/PS/XONE/X360/Switch
+                                    </li>
+                                    <li>
+                                        Bethesda Softworks
+                                    </li>
+                                    <li>
+                                        Cenega S.A.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-three">
+                            <div class="card__back">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">
+                                        Only
+                                    </p>
+                                    <p class="card__price-value">
+                                        $59
+                                    </p>
+                                </div>
+                                <a href="#" class="btn btn--white">
+                                    Preorder!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="u-center-text u-margin-top-huge">
+                <a href="#" class="btn btn--card">
+                    Subscribe now
                 </a>
             </div>
-        </header>
+        </section>
 
-        <!-- Main -->
-        <main>
+        <!-- Section-impressions -->
+        <section class="section-impressions">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.webm" type="video/webm"> Your browser does not support this option
+                </video>
+            </div>
 
-            <!-- Section-about -->
-            <section class="section-about">
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="second-headline">
-                        The Legend of Zelda
-                    </h2>
-                </div>
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="second-headline">
+                    This is your unique journey
+                </h2>
+            </div>
 
-                <div class="row">
-                    <div class="col-1-of-2">
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="img/woman.jpg" alt="Person on a tour" class="story__img">
+                        <figcaption class="story__caption">
+                            Mary Smith
+                        </figcaption>
+                    </figure>
+                    <div class="story__text">
                         <h3 class="third-headline u-margin-bottom-small">
-                            This is your unique story
+                            Nintendo Switch allows you to play anywhere
                         </h3>
-                        <p class="paragraph">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium quos minus, ducimus nesciunt vel saepe quod voluptatum! Nemo recusandae tenetur non quis architecto cumque neque, quaerat quasi distinctio numquam doloremque veritatis mollitia sint.
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam maiores rerum est asperiores consequatur error assumenda
+                            laudantium! Dignissimos quae dolore alias distinctio exercitationem eum voluptas quaerat fugiat
+                            iste, officia odit ut eligendi voluptatum molestias ad pariatur optio commodi.
                         </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="img/man.jpg" alt="Person on a tour" class="story__img">
+                        <figcaption class="story__caption">
+                            Jack Wilson
+                        </figcaption>
+                    </figure>
+                    <div class="story__text">
                         <h3 class="third-headline u-margin-bottom-small">
-                            Do not lose your chance
+                            It changed my whole experience
                         </h3>
-                        <p class="paragraph">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit molestiae ullam quia obcaecati aliquid ut atque dolor et cupiditate repellat quisquam corporis aspernatur.
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis labore ut corporis culpa aliquam odio eius, tempore
+                            officia excepturi dignissimos atque corrupti voluptate deserunt cupiditate quos quas. Autem consectetur
+                            possimus explicabo amet ad nisi dicta, non nihil.
                         </p>
-
-                        <a href="#" class="btn-info">
-                            Expand description &rarr;
-                        </a>
-                    </div>
-
-                    <div class="col-1-of-2">
-                        <div class="composition">
-                            <img src="img/link.png" 
-                                 alt="Link" 
-                                 class="composition__photo composition__photo--one">
-
-                            <img src="img/horse.png" 
-                                 alt="Horse" 
-                                 class="composition__photo composition__photo--two">
-
-                            <img src="img/zelda.png" 
-                                 alt="Zelda" 
-                                 class="composition__photo composition__photo--three">
-                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <!-- Section-features -->
-            <section class="section-features">
-                <div class="row">
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-hammer"></i>
-                            <h3 class="third-headline u-margin-bottom-small">
-                                Weapons
-                            </h3>
-                            <p class="feature-box__text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sed ut nihil sequi earum qui.
-                            </p>
-                        </div>
-                    </div>
+            <div class="u-center-text u-margin-top-huge">
+                <a href="#" class="btn-info">
+                    This is your chance &rarr;
+                </a>
+            </div>
+        </section>
 
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-compass"></i>
-                            <h3 class="third-headline u-margin-bottom-small">
-                                World
-                            </h3>
-                            <p class="feature-box__text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sed ut nihil sequi earum qui.
-                            </p>
-                        </div>
-                    </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <img src="img/footer-logo.png" alt="Green" class="footer__logo">
+            </div>
 
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-gunsight"></i>
-                            <h3 class="third-headline u-margin-bottom-small">
-                                Opponents
-                            </h3>
-                            <p class="feature-box__text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sed ut nihil sequi earum qui.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-gear"></i>
-                            <h3 class="third-headline u-margin-bottom-small">
-                                Mechanics
-                            </h3>
-                            <p class="feature-box__text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sed ut nihil sequi earum qui.
-                            </p>
-                        </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Company
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Contact us
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Carrers
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Privacy us
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Terms
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </section>
-
-            <!-- Section-games -->
-            <section class="section-games">
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="second-headline">
-                        Other popular games
-                    </h2>
-                </div>
-
-                <div class="row">
-                    <div class="col-1-of-3">
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--one">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__headline">
-                                    <span class="card__headline-span card__headline-span--one">
-                                        Noire
-                                    </span>
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>
-                                            Team Bondi
-                                        </li>
-                                        <li>
-                                            17.11.2017
-                                        </li>
-                                        <li>
-                                            PC/PS4/PS/XONE/X360/Switch
-                                        </li>
-                                        <li>
-                                            Rockstar Games
-                                        </li>
-                                        <li>
-                                            Cenega S.A.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card__side card__side--back card__side--back-one">
-                                <div class="card__back">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">
-                                            Only
-                                        </p>
-                                        <p class="card__price-value">
-                                            $39
-                                        </p>
-                                    </div>
-                                    <a href="#" class="btn btn--white">
-                                        Preorder!
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-1-of-3">
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--two">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__headline">
-                                    <span class="card__headline-span card__headline-span--one">
-                                        Doom
-                                    </span>
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>
-                                            id Software
-                                        </li>
-                                        <li>
-                                            10.11.2017
-                                        </li>
-                                        <li>
-                                            PC/PS4/Switch/XONE
-                                        </li>
-                                        <li>
-                                            Bethesda Softworks
-                                        </li>
-                                        <li>
-                                            Cenega S.A.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card__side card__side--back card__side--back-two">
-                                <div class="card__back">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">
-                                            Only
-                                        </p>
-                                        <p class="card__price-value">
-                                            $49
-                                        </p>
-                                    </div>
-                                    <a href="#" class="btn btn--white">
-                                        Preorder!
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-1-of-3">
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--three">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__headline">
-                                    <span class="card__headline-span card__headline-span--one">
-                                        Skyrim
-                                    </span>
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>
-                                            Bethesda Softworks
-                                        </li>
-                                        <li>
-                                            17.11.2017
-                                        </li>
-                                        <li>
-                                            PC/PS4/PS/XONE/X360/Switch
-                                        </li>
-                                        <li>
-                                            Bethesda Softworks
-                                        </li>
-                                        <li>
-                                            Cenega S.A.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card__side card__side--back card__side--back-three">
-                                <div class="card__back">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">
-                                            Only
-                                        </p>
-                                        <p class="card__price-value">
-                                            $59
-                                        </p>
-                                    </div>
-                                    <a href="#" class="btn btn--white">
-                                        Preorder!
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="btn btn--card">
-                        Subscribe now
-                    </a>
-                </div>
-            </section>
-
-            <!-- Section-impressions -->
-            <section class="section-impressions">
-                <div class="bg-video">
-                    <video class="bg-video__content" autoplay muted loop>
-                        <source src="img/video.mp4" type="video/mp4">
-                        <source src="img/video.webm" type="video/webm">
-                        Your browser does not support this option
-                    </video>
-                </div>
-
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="second-headline">
-                        This is your unique journey 
-                    </h2>
-                </div>
-
-                <div class="row">
-                    <div class="story">
-                        <figure class="story__shape">
-                            <img src="img/woman.jpg"
-                                 alt="Person on a tour" 
-                                 class="story__img">
-                            <figcaption class="story__caption">
-                                Mary Smith
-                            </figcaption>
-                        </figure>
-                        <div class="story__text">
-                            <h3 class="third-headline u-margin-bottom-small">
-                                Nintendo Switch allows you to play anywhere
-                            </h3>
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam maiores rerum est asperiores consequatur error assumenda laudantium! Dignissimos quae dolore alias distinctio exercitationem eum voluptas quaerat fugiat iste, officia odit ut eligendi voluptatum molestias ad pariatur optio commodi.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="story">
-                        <figure class="story__shape">
-                            <img src="img/man.jpg"
-                                 alt="Person on a tour" 
-                                 class="story__img">
-                            <figcaption class="story__caption">
-                                Jack Wilson
-                            </figcaption>
-                        </figure>
-                        <div class="story__text">
-                            <h3 class="third-headline u-margin-bottom-small">
-                                It changed my whole experience
-                            </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis labore ut corporis culpa aliquam odio eius, tempore officia excepturi dignissimos atque corrupti voluptate deserunt cupiditate quos quas. Autem consectetur possimus explicabo amet ad nisi dicta, non nihil.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="btn-info">
-                        This is your chance &rarr;
-                    </a>
-                </div>
-            </section>
-
-            <!-- Section-newsletter -->
-            <section class="section-newsletter">
-                <div class="row">
-                    <div class="newsletter">
-                        <div class="newsletter__form">
-                            <form action="#" class="form">
-                                <div class="u-margin-bottom-medium">
-                                    <h2 class="second-headline">
-                                        Subscribe now! 
-                                    </h2>
-                                </div>
-
-                                <div class="form__group">
-                                    <input type="text" 
-                                           id="name"
-                                           class="form__input" 
-                                           placeholder="Full Name" 
-                                           required>       
-                                    <label for="name" class="form__label">
-                                        Full Name
-                                    </label>
-                                </div>
-
-                                <div class="form__group">
-                                    <input type="email" 
-                                           id="email"
-                                           class="form__input" 
-                                           placeholder="Email address" 
-                                           required>       
-                                    <label for="email" class="form__label">
-                                        Email
-                                    </label>
-                                </div>
-
-                                <div class="form__group">
-                                    <div class="form__radio-group">
-                                        <input type="radio" 
-                                               id="small"
-                                               name="size" 
-                                               class="form__radio-input">
-                                        <label for="small" class="form__radio-label">
-                                            <span class="form__radio-button">
-                                                &nbsp;
-                                            </span>
-                                            Sign up
-                                        </label>
-                                    </div>
-
-                                    <div class="form__radio-group">
-                                        <input type="radio" 
-                                               id="large" 
-                                               name="size"
-                                               class="form__radio-input">
-                                        <label for="large" class="form__radio-label">
-                                            <span class="form__radio-button">
-                                                &nbsp;
-                                            </span>
-                                            No, thanks
-                                        </label>
-                                    </div>
-
-                                    <div class="form__group">
-                                        <button class="btn btn--card u-margin-top-small">
-                                            Next step &rarr;
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>  
-
-            <!-- Footer -->
-            <footer class="footer">
-                <div class="footer__logo-box">
-                    <img src="img/footer-logo.png" 
-                         alt="Green" 
-                         class="footer__logo">
-                </div>
-
-                <div class="row">
-                    <div class="col-1-of-2">
-                        <div class="footer__navigation">
-                            <ul class="footer__list">
-                                <li class="footer__item">
-                                    <a href="#" class="footer__link">
-                                        Company
-                                    </a>
-                                </li>
-                                <li class="footer__item">
-                                    <a href="#" class="footer__link">
-                                        Contact us
-                                    </a>
-                                </li>
-                                <li class="footer__item">
-                                    <a href="#" class="footer__link">
-                                        Carrers
-                                    </a>
-                                </li>
-                                <li class="footer__item">
-                                    <a href="#" class="footer__link">
-                                        Privacy us
-                                    </a>
-                                </li>
-                                <li class="footer__item">
-                                    <a href="#" class="footer__link">
-                                        Terms
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-1-of-2">
-                        <p class="footer__copyright">
-                            Lorem ipsum dolor sit.
-                            <a href="#" class="footer__link">
+                <div class="col-1-of-2">
+                    <p class="footer__copyright">
+                        Lorem ipsum dolor sit.
+                        <a href="#" class="footer__link">
                             Krystian Fira
-                            </a>
-                            &copy; Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis et esse sed iste, quaerat cupiditate recusandae!
-                        </p>
-                    </div>
+                        </a>
+                        &copy; Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis et esse sed iste, quaerat cupiditate recusandae!
+                    </p>
                 </div>
-            </footer>
+            </div>
+        </footer>
 
-        </main>
-    </body>
+    </main>
+
+    <script>
+        $(function () {
+            $('.off-canvas__toggle').on('click', function (e) {
+                $('body').toggleClass('navigation-show');
+            });
+        });
+    </script>
+</body>
 </html>

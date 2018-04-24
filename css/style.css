@@ -430,89 +430,6 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
-.form__group:not(:last-child) {
-  margin-bottom: 2rem; }
-
-.form__input {
-  display: block;
-  width: 90%;
-  padding: 1.5rem 2rem;
-  font-size: 1.5rem;
-  font-family: inherit;
-  border: none;
-  border-radius: .2rem;
-  border-bottom: .2rem solid transparent;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: inherit;
-  transition: all .3s; }
-  @media only screen and (max-width: 56.25em) {
-    .form__input {
-      width: 100%; } }
-  .form__input:focus {
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
-    outline: none;
-    border-bottom: 0.2rem solid #55C57A; }
-  .form__input:focus:invalid {
-    border-bottom: 0.2rem solid #FF7730; }
-  .form__input::-webkit-input-placeholder {
-    color: #999999; }
-
-.form__input:placeholder-shown + .form__label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4rem); }
-
-.form__label {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-left: 2rem;
-  margin-top: .7rem;
-  transition: all .2s; }
-
-.form__radio-group {
-  display: inline-block;
-  width: 49%; }
-  @media only screen and (max-width: 56.25em) {
-    .form__radio-group {
-      width: 100%;
-      margin-bottom: 2rem; } }
-
-.form__radio-input {
-  display: none; }
-
-.form__radio-label {
-  cursor: pointer;
-  padding-left: 4.5rem;
-  font-size: 1.6rem;
-  position: relative; }
-
-.form__radio-button {
-  display: inline-block;
-  height: 3rem;
-  width: 3rem;
-  position: absolute;
-  top: -.4rem;
-  left: 0;
-  border-radius: 50%;
-  border: 0.4rem solid #55C57A; }
-  .form__radio-button::after {
-    content: "";
-    opacity: 0;
-    display: block;
-    height: 1.3rem;
-    width: 1.3rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: #55C57A;
-    border-radius: 50%;
-    transition: opacity .2s;
-    transform: translate(-50%, -50%); }
-
-.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
-  opacity: 1; }
-
 .story {
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
   margin: 0 auto;
@@ -699,6 +616,110 @@ body {
     text-align: center;
     transform: translate(-50%, -50%); }
 
+.off-canvas {
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+  .off-canvas__toggle {
+    cursor: pointer;
+    display: block;
+    height: 3.5rem;
+    width: 3.5rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 999;
+    border-radius: .2rem;
+    background-color: #777777; }
+    @media only screen and (min-width: 50em) {
+      .off-canvas__toggle {
+        display: none; } }
+  .off-canvas__span {
+    display: block;
+    margin: .3rem .8rem;
+    height: .2rem;
+    width: 2rem;
+    border-radius: .2rem;
+    background-color: #FFFFFF; }
+    .off-canvas__span:first-child {
+      margin-top: 1.2rem; }
+
+.navigation {
+  height: 100%;
+  min-height: 100%;
+  width: 25rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  position: fixed;
+  top: 0;
+  left: -25rem;
+  z-index: 998;
+  overflow: hidden;
+  overflow-y: auto;
+  color: #42505A;
+  background-color: #FF6666;
+  transition: .5s left; }
+  .navigation__heading {
+    margin: 3rem 4rem 4.5rem 2.5rem;
+    text-align: center; }
+    .navigation__heading__relay {
+      color: #42505A; }
+    .navigation__heading--alteration {
+      height: auto;
+      max-width: 12rem; }
+  .navigation__list {
+    margin: -3rem 0;
+    padding: 0;
+    list-style: none; }
+  .navigation__item {
+    font-weight: 600;
+    text-transform: uppercase; }
+    @media only screen and (min-width: 50em) {
+      .navigation__item {
+        display: inline-block;
+        margin: 0 .2rem;
+        border: 0;
+        vertical-align: middle; } }
+    .navigation__item:last-child {
+      border-bottom: 0; }
+  .navigation__link:link, .navigation__link:visited {
+    display: block;
+    padding: 0 3rem 0 3rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-decoration: none;
+    border-radius: .4rem;
+    color: #FFFFFF;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #DC143C 40%);
+    background-size: 230%;
+    transition: all .4s; }
+  @media only screen and (min-width: 50em) {
+    .navigation__link {
+      padding: 0 3rem; } }
+  .navigation__link--active {
+    color: #000000 !important;
+    background-color: #55C57A; }
+  .navigation__link:hover {
+    color: #000000;
+    background-position: 100%; }
+
+.navigation-show [class^="page-content"] {
+  left: 25rem; }
+
+.navigation-show [class^="navigation"] {
+  left: 0; }
+
+@media screen and (min-width: 50em) {
+  .navigation-show .page-content {
+    left: 0; }
+  .navigation-show,
+  .navigation {
+    width: 100%;
+    height: 26rem;
+    position: relative;
+    left: 0;
+    text-align: center; } }
+
 .section-about {
   margin-top: -36vh;
   padding: 25rem 0;
@@ -733,33 +754,3 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-impressions {
       padding: 10rem 0; } }
-
-.section-newsletter {
-  padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #1E90FF, #228B22); }
-  @media only screen and (max-width: 56.25em) {
-    .section-newsletter {
-      padding: 10rem 0; } }
-
-.newsletter {
-  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nature.jpg);
-  background-size: 100%;
-  border-radius: .2rem; }
-  @media only screen and (max-width: 75em) {
-    .newsletter {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nature.jpg);
-      background-size: cover; } }
-  @media only screen and (max-width: 56.25em) {
-    .newsletter {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nature.jpg);
-      border-radius: .2rem 18rem; } }
-  .newsletter__form {
-    padding: 6rem;
-    width: 50%; }
-    @media only screen and (max-width: 75em) {
-      .newsletter__form {
-        width: 65%; } }
-    @media only screen and (max-width: 56.25em) {
-      .newsletter__form {
-        width: 100%; } }
