@@ -33,7 +33,9 @@
         <nav class="navigation" role="navigation">
             <h1 class="navigation__heading">
                 <a href="#" class="navigation__relay">
-                    <img src="img/logo-top.png" alt="Logo" class="navigation__heading--alteration">
+                    <img src="img/logo-top.png" 
+                         alt="Nintendo Switch logo in the form of a portable device" 
+                         class="navigation__alteration">
                 </a>
             </h1>
 
@@ -46,27 +48,27 @@
                 </li>
                 <li class="navigation__item">
                     <a href="#" class="navigation__link navigation__link--active">
-                        O nas
+                        Zelda
                     </a>
                 </li>
                 <li class="navigation__item">
                     <a href="#" class="navigation__link">
-                        Oferta
+                        Details
                     </a>
                 </li>
                 <li class="navigation__item">
                     <a href="#" class="navigation__link">
-                        Cennik
+                        Other
                     </a>
                 </li>
                 <li class="navigation__item">
                     <a href="#" class="navigation__link">
-                        Galeria
+                        Reviews
                     </a>
                 </li>
                 <li class="navigation__item">
                     <a href="#" class="navigation__link">
-                        Kontakt
+                        Contact
                     </a>
                 </li>
             </ul>
@@ -76,9 +78,11 @@
     <!-- Header -->
     <header class="page-header">
         <div class="page-header__logo-container">
-            <img src="img/logo-white.png" alt="Logo" class="page-header__logo">
+            <img src="img/logo-white.png" 
+                 alt="Logo" 
+                 class="page-header__logo">
         </div>
-
+        
         <div class="page-header__text-container">
             <h1 class="main-headline">
                 <span class="main-headline--top">
@@ -96,7 +100,7 @@
     </header>
 
     <!-- Main -->
-    <main class="page-content">
+    <main>
 
         <!-- Section-about -->
         <section class="section-about">
@@ -131,11 +135,17 @@
 
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/link.png" alt="Link" class="composition__photo composition__photo--one">
+                        <img src="img/link.png" 
+                             alt="Link" 
+                             class="composition__photo composition__photo--one">
 
-                        <img src="img/horse.png" alt="Horse" class="composition__photo composition__photo--two">
+                        <img src="img/horse.png" 
+                             alt="Horse" 
+                             class="composition__photo composition__photo--two">
 
-                        <img src="img/zelda.png" alt="Zelda" class="composition__photo composition__photo--three">
+                        <img src="img/zelda.png" 
+                             alt="Zelda" 
+                             class="composition__photo composition__photo--three">
                     </div>
                 </div>
             </div>
@@ -376,7 +386,10 @@
             <div class="row">
                 <div class="story">
                     <figure class="story__shape">
-                        <img src="img/woman.jpg" alt="Person on a tour" class="story__img">
+                        <img src="img/woman.jpg" 
+                             alt="Person on a tour" 
+                             class="story__img">
+
                         <figcaption class="story__caption">
                             Mary Smith
                         </figcaption>
@@ -397,7 +410,10 @@
             <div class="row">
                 <div class="story">
                     <figure class="story__shape">
-                        <img src="img/man.jpg" alt="Person on a tour" class="story__img">
+                        <img src="img/man.jpg" 
+                             alt="Person on a tour" 
+                             class="story__img">
+
                         <figcaption class="story__caption">
                             Jack Wilson
                         </figcaption>
@@ -425,7 +441,10 @@
         <!-- Footer -->
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/footer-logo.png" alt="Green" class="footer__logo">
+                <img src="img/footer-logo.png" 
+                     alt="Green" 
+                     class="footer__logo">
+
             </div>
 
             <div class="row">
@@ -475,8 +494,8 @@
     </main>
 
     <script>
-        $(function () {
-            $('.off-canvas__toggle').on('click', function (e) {
+        $(function() {
+            $('.off-canvas__toggle').on('click', function(e) {
                 $('body').toggleClass('navigation-show');
             });
         });

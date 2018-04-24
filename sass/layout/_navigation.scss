@@ -7,14 +7,14 @@
     &__toggle {
         cursor: pointer;
         display: block;
-        height: 3.5rem;
-        width: 3.5rem;
+        height: 5.5rem;
+        width: 5.5rem;
         position: fixed;
-        top: 1rem;
-        right: 1rem;
+        top: 2rem;
+        right: 2rem;
         z-index: 999;
         border-radius: .2rem;
-        background-color: $color-grey-dark;
+        background-color: $color-black;
 
         @media only screen and (min-width: 50em) {
             display: none;
@@ -23,14 +23,13 @@
 
     &__span {
         display: block;
-        margin: .3rem .8rem;
-        height: .2rem;
-        width: 2rem;
-        border-radius: .2rem;
+        margin: .6rem 1.4rem;
+        height: .5rem;
+        width: 3rem;
         background-color: $color-white;
 
         &:first-child {
-            margin-top: 1.2rem;
+            margin-top: 1.4rem;
         }
     }
 }
@@ -59,11 +58,11 @@
         &__relay {
             color: $color-grey-dark-2;
         }
+    }
 
-        &--alteration {
-            height: auto;
-            max-width: 12rem;
-        }
+    &__alteration {
+        height: auto;
+        max-width: 12rem;
     }
 
     &__list {
@@ -102,7 +101,7 @@
                 120deg, 
                 transparent 0%, 
                 transparent 50%, 
-                $color-crimson 40%);
+                $color-black 50%);
             background-size: 230%;
             transition: all .4s;
         }
@@ -112,12 +111,10 @@
         }
 
         &--active {
-            color: $color-black !important;
-            background-color: $color-primary;
+            background-color: $color-burgundy;
         }
 
         &:hover {
-            color: $color-black;
             background-position: 100%;
         }
     }

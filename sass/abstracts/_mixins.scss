@@ -1,4 +1,4 @@
-// Clearfix
+/* Clearfix */
 @mixin clearfix {
     &::after {
         content: "";
@@ -7,17 +7,17 @@
     }
 }
 
-// Box-shadow
+/* Box-shadow */
 @mixin shadow {
     text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
 }
 
-// Box-shadow-back
+/* Box-shadow-back */
 @mixin shadow-back {
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 }
 
-// Media Queries Manager
+/* Media Queries Manager */
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
         @media only screen and (max-width: 37.5em) { @content; } 
