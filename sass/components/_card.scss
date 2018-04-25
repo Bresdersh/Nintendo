@@ -108,8 +108,8 @@
         color: $color-white;
 
         @include respond(tab-port) {
-            top: 4rem;
-            right: 18rem;
+            top: 2rem;
+            right: 20rem;
         }
     }
 

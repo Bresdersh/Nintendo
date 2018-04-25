@@ -19,10 +19,10 @@
 
         &--one {
             top: -3rem;
-            left: -1rem;
+            left: -4rem;
 
             @include respond(tab-port) {
-                top: 0;
+                top: 7rem;
             }
         }
 
@@ -31,8 +31,8 @@
             right: 1rem;
 
             @include respond(tab-port) {
-                top: -1rem;
-                left: 18rem;
+                top: 5rem;
+                left: 20rem;
             }
         }
 
@@ -41,7 +41,7 @@
             right: 12rem;
 
             @include respond(tab-port) {
-                top: -1rem;
+                top: 1rem;
                 left: -14rem;
             }
         }

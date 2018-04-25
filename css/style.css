@@ -323,8 +323,8 @@ body {
     color: #FFFFFF; }
     @media only screen and (max-width: 56.25em) {
       .card__headline {
-        top: 4rem;
-        right: 18rem; } }
+        top: 2rem;
+        right: 20rem; } }
   .card__headline-span {
     padding: 1rem 1.5rem;
     border-radius: .5rem;
@@ -410,23 +410,23 @@ body {
         position: relative; } }
     .composition__photo--one {
       top: -3rem;
-      left: -1rem; }
+      left: -4rem; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--one {
-          top: 0; } }
+          top: 7rem; } }
     .composition__photo--two {
       top: -3rem;
       right: 1rem; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--two {
-          top: -1rem;
-          left: 18rem; } }
+          top: 5rem;
+          left: 20rem; } }
     .composition__photo--three {
       top: 9rem;
       right: 12rem; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--three {
-          top: -1rem;
+          top: 1rem;
           left: -14rem; } }
     .composition__photo:hover {
       text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
